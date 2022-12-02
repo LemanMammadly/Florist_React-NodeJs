@@ -1,0 +1,46 @@
+.bhHnmT{
+    margin: 0 !important;
+}
+
+.imgbig{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    height: 90vh;
+}
+
+.allslidertext{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.allslidertext .primary-btn {
+    display: inline-block;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #f45d96;
+    padding: 14px 30px 12px;
+    border-radius: 50px;
+    border: none;
+}
+
+.allslidertext span {
+    font-size: 16px;
+    color: #111111;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.allslidertext h2 {
+    color: #111111;
+    font-size: 43px;
+    line-height: 60px;
+    margin-bottom: 28px;
+}

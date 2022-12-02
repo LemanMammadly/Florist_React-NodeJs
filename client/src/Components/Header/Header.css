@@ -1,0 +1,48 @@
+header .all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .containerheader{
+    padding: 0 5rem;
+}
+
+header .right .alllink a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+
+header .right .allicons a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+header .right .burger{
+    display: none;
+}
+
+@media(max-width:576px){
+    header .right .alllink {
+        display: none;
+    }
+
+    header .right .allicons .icon{
+        display: none;
+    }
+
+    header .right .allicons  .burger{
+        display: block;
+    }
+
+    header .containerheader{
+        padding: 0 1rem;
+    }
+
+
+}
