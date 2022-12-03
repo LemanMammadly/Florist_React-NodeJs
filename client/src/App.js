@@ -6,6 +6,8 @@ import LogoDetail from "./Admin/Logo/LogoDetail.jsx";
 import UpdateLogo from "./Admin/Logo/UpdateLogo.jsx";
 import Home from "./Pages/Home/Home.jsx";
 import AddSlider from "./Admin/Slider/AddSlider.jsx";
+import SliderDetail from "./Admin/Slider/SliderDetail.jsx";
+import UpdateSlider from "./Admin/Slider/UpdateSlider.jsx";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="/admin/logodetail" element={<LogoDetail/>} />
       <Route path="/admin/updatelogo/:id" element={<UpdateLogo/>} />
       <Route path="/admin/addslider" element={<AddSlider/>} />
+      <Route path="/admin/sliderdetail" element={<SliderDetail/>} />
+      <Route path="/admin/updateslider/:id" element={<UpdateSlider/>} />
       </Route>
     </Routes>
     </BrowserRouter>

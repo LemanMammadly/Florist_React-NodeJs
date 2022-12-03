@@ -19,18 +19,13 @@ const Sidebarr = () => {
               {" "}
               Logo Detail
             </MenuItem>
-            <MenuItem routerLink={<Link to="/admin/updatelogo/:id" />}> Update Logo</MenuItem>
           </SubMenu>
           <SubMenu label="Slider">
             <MenuItem routerLink={<Link to="/admin/addslider" />}>
               {" "}
               Add Slider
             </MenuItem>
-            <MenuItem routerLink={<Link to="/calendar" />}> Calendar</MenuItem>
-            <MenuItem routerLink={<Link to="/e-commerce" />}>
-              {" "}
-              E-commerce
-            </MenuItem>
+            <MenuItem routerLink={<Link to="/admin/sliderdetail" />}> Slider Detail</MenuItem>
           </SubMenu>
           <SubMenu label="Instagram">
             <MenuItem routerLink={<Link to="/documentation" />}>

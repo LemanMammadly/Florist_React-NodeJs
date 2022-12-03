@@ -16,42 +16,50 @@ const LogoDetail = () => {
   return (
     <>
       <div className="backbtn">
-      <Link className="p-3 back" to="#/" onClick={() => navigate(-1)}>
-         Back <TiArrowBack/>
-      </Link>
+        <Link className="p-3 back" to="#/" onClick={() => navigate(-1)}>
+          Back <TiArrowBack />
+        </Link>
       </div>
 
       <div className="p-5">
-        <table class="table w-75 m-auto">
-          <thead class="thead-dark">
+        <table class="w-75 m-auto table logos">
+          <thead>
             <tr>
-              <th></th>
+            <th scope="col"></th>
               <th scope="col">LOGO</th>
               <th scope="col"></th>
-              <th scope="col">DISPLAY</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th className="text-center" scope="col">DISPLAY</th>
             </tr>
           </thead>
           {logo &&
             logo.map((logos, _id) => (
-              <tbody>
+              <tbody className="tbody">
                 <tr>
-                  <th scope="row">1</th>
+                  <th scope="row"></th>
                   <td>
-                    <img src={logos.image} alt="" />
+                    <img className="img-fluid" src={logos.image} alt="" />
                   </td>
+                  <td ></td>
                   <td></td>
-                  <td>
-                  <Link
-                    to={`/admin/updatelogo/${logo_arr[_id]}`}
-                    onClick={async () => {
-                      await axios
-                        .put(`http://localhost:5000/logo/${logo_arr[_id]}`)
-                        .then((res) => res.data);
-                    }}
-                    className="me-1 btn btn1"
-                  >
-                    Update
-                  </Link>
+                  <td></td>
+                  <td></td>
+                  <td className="text-center">
+                    <Link
+                      to={`/admin/updatelogo/${logo_arr[_id]}`}
+                      onClick={async () => {
+                        await axios
+                          .put(
+                            `http://localhost:5000/logo/${logo_arr[_id]}`
+                          )
+                          .then((res) => res.data);
+                      }}
+                      className="me-1 btn btn1 button"
+                    >
+                      UPDATE
+                    </Link>
                   </td>
                 </tr>
               </tbody>
