@@ -1,0 +1,46 @@
+.categories .button {
+    background-color: rgba(51, 51, 51, 0.05);
+    border-radius: 8px;
+    border-width: 0;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 12px;
+    text-align: center;
+    transition: all 200ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  
+ .back{
+    text-decoration: none;
+    color: #333333;
+    font-size: 15px;
+  }
+  
+  .backbtn{
+    margin-top: 10px;
+  }
+  
+  .backbtn :hover{
+    color: #33333346;
+  }
+
+  .categories .table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .categories .img{
+    width: 90%;
+  }

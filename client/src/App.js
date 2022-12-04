@@ -8,6 +8,8 @@ import Home from "./Pages/Home/Home.jsx";
 import AddSlider from "./Admin/Slider/AddSlider.jsx";
 import SliderDetail from "./Admin/Slider/SliderDetail.jsx";
 import UpdateSlider from "./Admin/Slider/UpdateSlider.jsx";
+import AddCategory from "./Admin/Category/AddCategory.jsx";
+import CategoryDetail from "./Admin/Category/CategoryDetail.jsx";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Route path="/admin/addslider" element={<AddSlider/>} />
       <Route path="/admin/sliderdetail" element={<SliderDetail/>} />
       <Route path="/admin/updateslider/:id" element={<UpdateSlider/>} />
+      <Route path="/admin/addcategory" element={<AddCategory/>} />
+      <Route path="/admin/categorydetail" element={<CategoryDetail/>} />
       </Route>
     </Routes>
     </BrowserRouter>

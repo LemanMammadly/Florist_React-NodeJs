@@ -1,0 +1,35 @@
+.benefits {
+    padding: 3rem 0;
+}
+.benefits .all{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefits h4{
+    color: #111;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.benefits p {
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 0 15px 0;
+}
+
+@media(max-width:576px) {
+    .container{
+        padding: 10px;
+    }
+    .benefits .all{
+        margin-right: auto !important;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

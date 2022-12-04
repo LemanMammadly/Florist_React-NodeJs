@@ -1,7 +1,6 @@
 const Category=require("../model/categorySchema.js")
 
 
-
 const getAllCategory=async(req,res,next)=>{
     let categories;
     try {
@@ -85,7 +84,7 @@ const deleteCategory=async(req,res,next)=>{
     let category;
     const id=req.params.id;
     try {
-        category= await Category.findOneAndDelete(id)
+        category= await Category.findByIdAndDelete(id)
     } catch (error) {
         console.log(error);
     }

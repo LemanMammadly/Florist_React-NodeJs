@@ -79,8 +79,8 @@ const updateSlider=async(req,res,next)=>{
 }
 
 const deleteSlider=async(req,res,next)=>{
-    const id=req.params.id;
     let slider;
+    const id=req.params.id;
     try {
         slider=await Slider.findByIdAndDelete(id)
     } catch (error) {
