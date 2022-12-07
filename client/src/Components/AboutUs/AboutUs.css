@@ -1,0 +1,152 @@
+.about{
+    padding: 2rem 0;
+}
+
+.about .containeraboutus{
+    padding: 0 7rem;
+}
+.about .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .top .left{
+    text-align: left;
+}
+
+
+.about span {
+    color: #f45d96;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.about h2 {
+    font-size: 42px;
+    color: #111111;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-family: "Quicksand", sans-serif;
+    color: #444444d0;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0 0 15px 0;
+}
+
+.about .aboutvideo{
+    background-image: url("https://preview.colorlib.com/theme/florist/img/about/about-video.jpg.webp");
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 90%;
+    position: relative;
+}
+.about .bottom .left .video svg{
+    display: inline-block;
+    height: 60px;
+    width:60px;
+    background: #ffffff;
+    color: #f45d96;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about .bottom{
+    display: flex;
+    align-items: center;
+}
+
+.about .about-text span {
+    color: #f45d96;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.about .about-text{
+    background: #ffffff;
+    -webkit-box-shadow: 0px 10px 21px rgb(99 134 137 / 16%);
+    box-shadow: 0px 10px 21px rgb(99 134 137 / 16%);
+    padding: 100px 90px 105px 70px;
+    margin-left: -95px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+}
+
+.about .about-text h2 {
+    color: #111111;
+    font-size: 38px;
+    line-height: 1.4;
+    margin-bottom: 26px;
+    font-weight: 300;
+}
+.about .about-text p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.about .bottom button{
+    display: inline-block;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: #f45d96;
+    padding: 14px 30px 12px;
+    border-radius: 50px;
+    border: none;
+}
+
+.about .bottom .right{
+    z-index: 33333;
+}
+
+@media(max-width:576px) {
+    .containeraboutus{
+        padding: 2rem !important;
+    }
+    .about .top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .aboutvideo{
+        width: 100%;
+    }
+    .about .bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about .about-text{
+        margin-left: 0px;
+        width: 100%;
+        padding: 50px 20px !important;
+    }
+}

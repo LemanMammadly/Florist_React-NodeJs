@@ -34,7 +34,7 @@
   }
   .slidercontent{
     font-family: var(--bs-body-font-family);
-    margin-left: 7rem;
+    margin-left: 8rem;
     position: absolute;
     top: 150px;
     text-align: left;

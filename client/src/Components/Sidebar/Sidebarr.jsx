@@ -1,11 +1,6 @@
 import React from "react";
 import "./Sidebarr.css";
-import {
-  Sidebar,
-  Menu,
-  MenuItem,
-  SubMenu,
-} from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 
 const Sidebarr = () => {
@@ -25,17 +20,19 @@ const Sidebarr = () => {
               {" "}
               Add Slider
             </MenuItem>
-            <MenuItem routerLink={<Link to="/admin/sliderdetail" />}> Slider Detail</MenuItem>
-          </SubMenu>
-          <SubMenu label="Instagram">
-            <MenuItem routerLink={<Link to="/documentation" />}>
+            <MenuItem routerLink={<Link to="/admin/sliderdetail" />}>
               {" "}
-              Documentation
+              Slider Detail
             </MenuItem>
-            <MenuItem routerLink={<Link to="/calendar" />}> Calendar</MenuItem>
-            <MenuItem routerLink={<Link to="/e-commerce" />}>
+          </SubMenu>
+          <SubMenu label="Category">
+            <MenuItem routerLink={<Link to="/admin/addcategory" />}>
               {" "}
-              E-commerce
+              Add Category
+            </MenuItem>
+            <MenuItem routerLink={<Link to="/admin/categorydetail" />}>
+              {" "}
+              Category Detail
             </MenuItem>
           </SubMenu>
         </Menu>

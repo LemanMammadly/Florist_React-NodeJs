@@ -4,6 +4,10 @@
     justify-content: space-between;
 }
 
+.containercategory{
+    padding: 0 7rem;
+}
+
 .categorysection .box{
     position: relative ;
     margin-bottom: 40px;
@@ -31,6 +35,9 @@
         left: 75px;
         bottom: 15px;
         width: calc(100% - 150px);
+    }
+    .containercategory{
+        padding: 0 !important;
     }
 }
 

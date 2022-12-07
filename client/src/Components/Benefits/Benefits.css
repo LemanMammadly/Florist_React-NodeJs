@@ -1,6 +1,10 @@
 .benefits {
     padding: 3rem 0;
 }
+
+.benefits .containerbenefits{
+    padding: 0 7rem;
+}
 .benefits .all{
     display: flex;
     align-items: center;
@@ -23,8 +27,8 @@
 }
 
 @media(max-width:576px) {
-    .container{
-        padding: 10px;
+    .containerbenefits{
+        padding: 10px !important;
     }
     .benefits .all{
         margin-right: auto !important;

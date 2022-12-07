@@ -4,7 +4,7 @@ import "./Benefits.css"
 const Benefits = () => {
   return (
     <section className='benefits'>
-      <div className="container">
+      <div className="containerbenefits">
         <div className="all row col-lg-12">
           <div className="benefititem row col-lg-3 col-12">
             <div className="left col-lg-3 col-3">

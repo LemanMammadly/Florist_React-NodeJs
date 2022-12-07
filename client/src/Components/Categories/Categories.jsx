@@ -6,7 +6,7 @@ const Categories = () => {
     const {category} =useCategory()
   return (
     <section className='categorysection'>
-        <div className="container">
+        <div className="containercategory">
             <div className="row all">
                {
                 category && category.map((categories)=>(

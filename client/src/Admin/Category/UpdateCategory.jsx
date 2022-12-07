@@ -2,9 +2,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { TiArrowBack } from 'react-icons/ti';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import "./UpdateSlider.css"
+import "./UpdateCategory.css"
 
-const UpdateSlider = () => {
+const UpdateCategory = () => {
     const [inputs, setInputs] = useState([]);
     const history = useNavigate();
     const id = useParams().id;
@@ -12,9 +12,9 @@ const UpdateSlider = () => {
     useEffect(() => {
       const fetchHandler = async () => {
         await axios
-          .get(`http://localhost:5000/slider/${id}`)
+          .get(`http://localhost:5000/category/${id}`)
           .then((res) => res.data)
-          .then((data) => setInputs(data.slider));
+          .then((data) => setInputs(data.category));
       };
       fetchHandler();
     }, [id]);
@@ -26,10 +26,10 @@ const UpdateSlider = () => {
   
     const sendRequest = async () => {
       await axios
-        .put(`http://localhost:5000/slider/${id}`, {
-          title: String(inputs.title),
-          description: String(inputs.description),
+        .put(`http://localhost:5000/category/${id}`, {
           image: String(inputs.image),
+          title: String(inputs.title),
+          count: String(inputs.count),
         })
         .then((res) => res.data);
     };
@@ -39,7 +39,6 @@ const UpdateSlider = () => {
         [e.target.name]: e.target.value,
       }));
     };
-  
   return (
     <>
     <div className="backbtn">
@@ -47,11 +46,20 @@ const UpdateSlider = () => {
          Back <TiArrowBack/>
       </Link>
       </div>
-    <div className="slider">
+    <div className="category">
         <div className="form">
-          <p>Slider</p>
-          <form key={inputs._id} className="slider-form" onSubmit={handleSubmit}>
+          <p>Category</p>
+          <form key={inputs._id} className="category-form" onSubmit={handleSubmit}>
             <input
+              type="text"
+              placeholder="image url"
+              required
+              aria-required
+              value={inputs.image}
+              name="image"
+              onChange={handleChange}
+            />
+             <input
               type="text"
               placeholder="title"
               required
@@ -62,20 +70,11 @@ const UpdateSlider = () => {
             />
              <input
               type="text"
-              placeholder="description"
+              placeholder="count"
               required
               aria-required
-              value={inputs.description}
-              name="description"
-              onChange={handleChange}
-            />
-             <input
-              type="text"
-              placeholder="image url"
-              required
-              aria-required
-              value={inputs.image}
-              name="image"
+              value={inputs.count}
+              name="count"
               onChange={handleChange}
             />
             <button type="submit">Save</button>
@@ -86,4 +85,4 @@ const UpdateSlider = () => {
   )
 }
 
-export default UpdateSlider
+export default UpdateCategory
