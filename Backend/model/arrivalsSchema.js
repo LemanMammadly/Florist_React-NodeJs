@@ -4,6 +4,7 @@ const mongoose=require("mongoose");
 const arrivalSchema=new mongoose.Schema({
     status:{
         type:String,
+        required:false
     },
     image:{
         type:String,

@@ -11,6 +11,7 @@ import UpdateSlider from "./Admin/Slider/UpdateSlider.jsx";
 import AddCategory from "./Admin/Category/AddCategory.jsx";
 import CategoryDetail from "./Admin/Category/CategoryDetail.jsx";
 import UpdateCategory from "./Admin/Category/UpdateCategory.jsx";
+import AddArrival from "./Admin/Arrival/AddArrival.jsx";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Route path="/admin/addcategory" element={<AddCategory/>} />
       <Route path="/admin/categorydetail" element={<CategoryDetail/>} />
       <Route path="/admin/updatecategory/:id" element={<UpdateCategory/>} />
+      <Route path="/admin/addarrival" element={<AddArrival/>} />
       </Route>
     </Routes>
     </BrowserRouter>
